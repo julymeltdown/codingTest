@@ -1,0 +1,7 @@
+A, B = map(int, input().split())
+setA = set(input().split())
+setB = set(input().split())
+difference = list(map(int, list(setA - setB)))
+difference.sort()
+print(len(difference))
+print(*difference, sep=" ")
